@@ -22,7 +22,14 @@ def export_bundle(phantom: SurfacePhantom, case_name: str, output_dir: Path) -> 
     bundle_dir.mkdir(parents=True, exist_ok=True)
     
     npz_path = bundle_dir / "clean.npz"
-    np.savez_compressed(npz_path, z_data=phantom.z_data)
+    np.savez_compressed(
+        npz_path,
+        z_data=phantom.z_data,
+        x_size_m=np.array([phantom.x_size_m], dtype=np.float64),
+        y_size_m=np.array([phantom.y_size_m], dtype=np.float64),
+        z_unit=np.array([phantom.z_unit], dtype=str),
+        model_name=np.array([phantom.model_name], dtype=str)
+    )
     
     file_hash = _calc_hash(npz_path)
     
@@ -53,12 +60,26 @@ def export_observed_bundle(phantom: "ObservedPhantom", case_name: str, output_di
     
     # 1. Export clean
     clean_npz = bundle_dir / "clean.npz"
-    np.savez_compressed(clean_npz, z_data=phantom.clean.z_data)
+    np.savez_compressed(
+        clean_npz,
+        z_data=phantom.clean.z_data,
+        x_size_m=np.array([phantom.clean.x_size_m], dtype=np.float64),
+        y_size_m=np.array([phantom.clean.y_size_m], dtype=np.float64),
+        z_unit=np.array([phantom.clean.z_unit], dtype=str),
+        model_name=np.array([phantom.clean.model_name], dtype=str)
+    )
     clean_hash = _calc_hash(clean_npz)
     
     # 2. Export observed
     obs_npz = bundle_dir / "observed.npz"
-    np.savez_compressed(obs_npz, z_data=phantom.observed_z)
+    np.savez_compressed(
+        obs_npz,
+        z_data=phantom.observed_z,
+        x_size_m=np.array([phantom.clean.x_size_m], dtype=np.float64),
+        y_size_m=np.array([phantom.clean.y_size_m], dtype=np.float64),
+        z_unit=np.array([phantom.clean.z_unit], dtype=str),
+        model_name=np.array([phantom.clean.model_name], dtype=str)
+    )
     obs_hash = _calc_hash(obs_npz)
     
     # 3. Export masks if any

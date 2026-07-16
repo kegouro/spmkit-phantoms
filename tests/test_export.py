@@ -23,6 +23,10 @@ def test_export_bundle(tmp_path: Path):
     # Check npz load
     loaded = np.load(npz_path)
     assert np.all(loaded["z_data"] == surf.z_data)
+    assert loaded["x_size_m"][0] == 1e-6
+    assert loaded["y_size_m"][0] == 1e-6
+    assert loaded["z_unit"][0] == "m"
+    assert loaded["model_name"][0] == "flat_surface"
     
     # Check JSON
     with json_path.open() as f:
