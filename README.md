@@ -1,4 +1,3 @@
-[README_spmkit-phantoms_ONLY.md](https://github.com/user-attachments/files/30107797/README_spmkit-phantoms_ONLY.md)
 <p align="center">
   <img
     src="branding/main-banner.png"
