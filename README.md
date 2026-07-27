@@ -63,6 +63,23 @@ A phantom provides the missing counterpart: a numerical surface whose geometry i
 
 ---
 
+## Ecosystem
+
+`spmkit-phantoms` is part of the SPM-Kit ecosystem:
+
+| Repository | Role |
+|---|---|
+| **[spmkit](https://github.com/kegouro/spmkit)** | Numerical engine, Python API, CLI and graphical workspace (Fathom) — the system under test |
+| **[spmkit-validation](https://github.com/kegouro/spmkit-validation)** | External black-box validation harness that consumes phantoms as campaign inputs |
+| **[spmkit-phantoms](https://github.com/kegouro/spmkit-phantoms)** (this repo) | Deterministic synthetic surfaces with known ground truth |
+| **[spmkit-data-hunter](https://github.com/kegouro/spmkit-data-hunter)** | Discovery and triage of public AFM/SPM datasets |
+
+Phantoms generated here feed directly into `spmkit-validation` campaigns. The synthetic roughness v0.1 cross-validation campaign used six surfaces from this package to verify Sa, Sq and Sz against Gwyddion 2.71 (`LEVEL 3 CROSS_VALIDATED`).
+
+> **Find the evidence → define the truth → test the system externally → preserve the result.**
+
+---
+
 ## Why this repository exists
 
 Testing that an analysis pipeline finishes without crashing is useful.
@@ -956,6 +973,16 @@ Small, inspectable pull requests are preferred over giant feature drops.
 ## License
 
 See [`LICENSE`](LICENSE) for the license terms of this repository.
+
+---
+
+## Citation
+
+If you use `spmkit-phantoms` in research, cite it per [`CITATION.cff`](CITATION.cff).
+
+## Acknowledgements
+
+Independently designed and developed by José Labarca Baeza, an undergraduate physics student at Universidad Técnica Federico Santa María, in the academic context of the SPM Lab. Tomás Corrales and the SPM Lab at UTFSM for providing selected experimental datasets and laboratory context used during development and evaluation.
 
 ---
 

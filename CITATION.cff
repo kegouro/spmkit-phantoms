@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use spmkit-phantoms in research, please cite this software."
+title: "spmkit-phantoms — deterministic synthetic surfaces and controlled artifacts for SPM validation"
+abstract: "Generator of analytical 2D surfaces with known parameters and controlled SPM-like corruptions for software verification and benchmark construction. Clean-versus-observed separation, explicit seeds, canonical hashes and reproducible export bundles."
+type: software
+authors:
+  - family-names: "Labarca Baeza"
+    given-names: "José"
+    orcid: "https://orcid.org/0009-0006-8890-4048"
+    affiliation: "Universidad Técnica Federico Santa María, Valparaíso, Chile"
+repository-code: "https://github.com/kegouro/spmkit-phantoms"
+license: MIT
+keywords:
+  - AFM
+  - SPM
+  - synthetic data
+  - ground truth
+  - phantoms
+  - validation
+  - scientific software
+version: 0.1.0
+date-released: "2026-07-11"

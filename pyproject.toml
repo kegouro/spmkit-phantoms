@@ -7,7 +7,7 @@ name = "spmkit-phantoms"
 version = "0.1.0"
 description = "Generador de superficies analíticas (ground truth) para metrología SPM."
 authors = [
-    { name = "jlabarca@usm.cl" },
+    { name = "José Labarca Baeza", email = "jlabarca@usm.cl" },
 ]
 readme = "README.md"
 requires-python = ">=3.10"
