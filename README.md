@@ -22,6 +22,11 @@
 [![Tests](https://img.shields.io/badge/tests-pytest-f5a72c?style=flat-square&logo=pytest&logoColor=000000)](#testing)
 [![License](https://img.shields.io/github/license/kegouro/spmkit-phantoms?style=flat-square&color=ff7a3c)](LICENSE)
 
+<p align="center">
+  <a href="README.es.md"><img src="https://img.shields.io/badge/README-Español-lightgrey?style=for-the-badge" alt="Español"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/README-English-blue?style=for-the-badge" alt="English"></a>
+</p>
+
 [Overview](#overview) ·
 [Surfaces](#analytical-surfaces) ·
 [Corruptions](#controlled-corruptions) ·
