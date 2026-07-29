@@ -79,9 +79,16 @@ A phantom provides the missing counterpart: a numerical surface whose geometry i
 | **[spmkit-phantoms](https://github.com/kegouro/spmkit-phantoms)** (this repo) | Deterministic synthetic surfaces with known ground truth |
 | **[spmkit-data-hunter](https://github.com/kegouro/spmkit-data-hunter)** | Discovery and triage of public AFM/SPM datasets |
 
-Phantoms generated here feed directly into `spmkit-validation` campaigns. The synthetic roughness v0.1 cross-validation campaign used six surfaces from this package to verify Sa, Sq and Sz against Gwyddion 2.71 (`LEVEL 3 CROSS_VALIDATED`).
+Phantoms generated here can be exported as declared inputs for manually configured
+`spmkit-validation` campaigns. The synthetic roughness v0.1 cross-validation campaign
+used six surfaces from this package to verify Sa, Sq and Sz against Gwyddion 2.71
+(`LEVEL 3 CROSS_VALIDATED`) under its frozen scope.
 
 > **Find the evidence → define the truth → test the system externally → preserve the result.**
+
+[Explore the complete ecosystem portal](https://kegouro.github.io/spmkit/ecosystem/)
+for component boundaries, artifact contracts, installation paths, and reproducible
+workflow tutorials.
 
 ---
 
@@ -987,7 +994,15 @@ If you use `spmkit-phantoms` in research, cite it per [`CITATION.cff`](CITATION.
 
 ## Acknowledgements
 
-Independently designed and developed by José Labarca Baeza, an undergraduate physics student at Universidad Técnica Federico Santa María, in the academic context of the SPM Lab. Tomás Corrales and the SPM Lab at UTFSM for providing selected experimental datasets and laboratory context used during development and evaluation.
+José Labarca Baeza is the creator, author, and lead developer.
+
+Tomás Corrales and the SPM Lab at Universidad Técnica Federico Santa María provided selected experimental datasets and laboratory context during the development and evaluation of SPM-Kit.
+
+María Saavedra Fredes and Benjamin Schleyer helped locate and share candidate datasets for the validation campaigns.
+
+These acknowledgements do not assign software authorship or institutional ownership.
+They do not imply that every located dataset was used, accepted, redistributable, or
+scientifically suitable.
 
 ---
 

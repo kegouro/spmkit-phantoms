@@ -79,9 +79,16 @@ Un *phantom* proporciona la contraparte que falta: una superficie numérica cuya
 | **[spmkit-phantoms](https://github.com/kegouro/spmkit-phantoms)** (este repo) | Superficies sintéticas deterministas con *ground truth* conocido |
 | **[spmkit-data-hunter](https://github.com/kegouro/spmkit-data-hunter)** | Descubrimiento y triaje de datasets públicos AFM/SPM |
 
-Los *phantoms* generados aquí alimentan directamente las campañas de `spmkit-validation`. La campaña de validación cruzada *synthetic roughness* v0.1 usó seis superficies de este paquete para verificar Sa, Sq y Sz contra Gwyddion 2.71 (`LEVEL 3 CROSS_VALIDATED`).
+Los *phantoms* generados aquí pueden exportarse como inputs declarados para campañas
+de `spmkit-validation` configuradas manualmente. La campaña de validación cruzada
+*synthetic roughness* v0.1 usó seis superficies de este paquete para verificar Sa,
+Sq y Sz contra Gwyddion 2.71 (`LEVEL 3 CROSS_VALIDATED`) dentro de su alcance congelado.
 
 > **Find the evidence → define the truth → test the system externally → preserve the result.**
+
+[Explora el portal completo del ecosistema](https://kegouro.github.io/spmkit/ecosystem/)
+para conocer los límites de cada componente, contratos de artefactos, instalación
+y tutoriales de workflows reproducibles.
 
 ---
 
@@ -987,7 +994,15 @@ Si usas `spmkit-phantoms` en investigación, cítalo según [`CITATION.cff`](CIT
 
 ## Agradecimientos
 
-Diseñado y desarrollado independientemente por José Labarca Baeza, estudiante de pregrado de Física en la Universidad Técnica Federico Santa María, en el contexto académico del SPM Lab. Tomás Corrales y el SPM Lab en UTFSM proporcionaron datasets experimentales seleccionados y contexto de laboratorio durante el desarrollo y la evaluación.
+José Labarca Baeza es el creador, autor y desarrollador principal.
+
+Tomás Corrales y el SPM Lab de la Universidad Técnica Federico Santa María proporcionaron datasets experimentales seleccionados y contexto de laboratorio durante el desarrollo y la evaluación de SPM-Kit.
+
+María Saavedra Fredes y Benjamin Schleyer ayudaron a localizar y compartir datasets candidatos para las campañas de validación.
+
+Estos agradecimientos no asignan autoría del software ni propiedad institucional.
+Tampoco implican que todo dataset localizado fuese usado, aceptado, redistribuible o
+científicamente adecuado.
 
 ---
 
